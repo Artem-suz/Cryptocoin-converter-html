@@ -21,10 +21,43 @@
     <title>Cryptocoin converter</title>
   </head>
   <body>
-    <header>
-      <div class="container"></div>
+    <header class="header">
+      <div class="container">
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">Курсы валют</a> 
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">Купить криптовалюту</a> 
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">Портфель</a> 
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <main></main>
-    <footer></footer>
+    <main class="main">
+      <div class="container">
+        <h1 class="main__title">Конвертер криптовалют</h1>
+        <div class="convertor">
+          <div class="covertor__column">
+            <div class="coin-select from-coin"></div>
+            <input class="convertor-value-input" type="text" name="convert_from_value" value="1"> 
+          </div>
+          <div class="covertor__column arrows"></div>
+          <div class="covertor__column">
+            <div class="coin-select to-coin"></div>
+            <input class="convertor-value-input" type="text" name="convert_to_value" value>
+          </div>
+        </div>
+      </div>
+
+    </main>
+    <footer class="footer">
+      <img class="footer__logo" title="Cryptocoin converter" alt="Converter">
+      <h2 class="footer__title">Cryptocoin converter</h2>
+    </footer>
   </body>
 </html>
