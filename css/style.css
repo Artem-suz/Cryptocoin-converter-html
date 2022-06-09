@@ -6,7 +6,7 @@
   --color-text: #000;
   --color-alt-text: #fff;
   --content-bg: #fff;
-  --color-shadow: #000;
+  --color-shadow: #b3b3b3;
   --color-active-link: orange;
 }
 
@@ -70,6 +70,7 @@ ul {
 .footer__wrapper {
   background-color: var(--content-bg);
   padding: 1.25rem;
+  box-shadow: 0 8px 16px -5px var(--color-shadow);
 }
 
 .main__title {
@@ -85,9 +86,24 @@ ul {
 .course-schedule {
   margin-top: 1.25rem;
   width: 100%;
-  height: 500px;
+  height: 31.25rem;
 }
 
 .footer__wrapper {
   display: flex;
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+}
+
+.footer__link img {
+  width: 3.125rem;
+  height: 3.125rem;
+}
+
+.footer__title {
+  color: var(--blue);
+  margin-left: 0.625rem;
 }
