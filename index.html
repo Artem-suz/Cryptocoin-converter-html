@@ -42,27 +42,49 @@
       <div class="container">
         <div class="main__wrapper">
           <h1 class="main__title">Конвертер криптовалют</h1>
-          <div class="convertor">
-            <div class="covertor__column">
-              <div class="coin-select from-coin"></div>
+          <form class="converter" action="#" method="get">
+            <div class="coverter__column">
+              <select class="sel-dropdown" name="coin-list">
+                <option value="btc" selected>BTC</option>
+                <option value="eth">ETH</option>
+              </select>
               <input
-                class="convertor-value-input"
-                type="text"
+                class="converter-value-input"
+                type="number"
                 name="convert_from_value"
                 value="1"
               />
             </div>
-            <div class="covertor__column arrows"></div>
-            <div class="covertor__column">
-              <div class="coin-select to-coin"></div>
+            <div class="coverter__column arrows">
+              <svg
+                width="24"
+                height="22"
+                viewBox="0 0 24 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M16.75 10.75L18 12L24 6L18 0L16.75 1.25L20.5 5H0V7H20.5L16.75 10.75ZM7.25 11.25L6 10L0 16L6 22L7.25 20.75L3.5 17H24V15H3.5L7.25 11.25Z"
+                  fill="#202020"
+                />
+              </svg>
+            </div>
+            <div class="coverter__column">
+              <select class="sel-dropdown" name="valuta-list">
+                <option value="usd" selected>USD</option>
+                <option value="rub">RUB</option>
+              </select>
+
               <input
-                class="convertor-value-input"
-                type="text"
+                class="converter-value-input"
+                type="number"
                 name="convert_to_value"
                 value
               />
             </div>
-          </div>
+          </form>
 
           <div class="course-schedule"></div>
         </div>
