@@ -37,6 +37,13 @@ h3 {
 
 .header__nav {
   padding: 0 1.25rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__nav span {
+  color: var(--color-alt-text);
+  align-self: center;
 }
 
 .header__nav-list {
@@ -56,6 +63,10 @@ h3 {
 .header__nav-link {
   text-decoration: none;
   color: var(--color-alt-text);
+}
+
+.header__nav-item:active {
+  transform: translateY(1px);
 }
 
 .active {
@@ -135,7 +146,7 @@ ul {
 
 .course-schedule__description {
   font-size: 1rem;
-  line-height: 26px;
+  line-height: 1.625rem;
 }
 
 .footer__wrapper {
@@ -165,7 +176,7 @@ ul {
 }
 
 .footer__social-item {
-  font-size: 40px;
+  font-size: 2.5rem;
   cursor: pointer;
 }
 
@@ -193,23 +204,29 @@ ul {
   color: #2489fb;
 }
 
+.gh:active,
+.in:active,
+.vk:active {
+  transform: translateY(1px);
+}
+
 .footer__social-item + .footer__social-item {
-  margin-left: 8px;
+  margin-left: 0.5rem;
 }
 /* ///////////////////////// */
 .exchanger__description {
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
 }
 
 .exchanger__row {
   margin: 0 auto;
-  width: 486px;
+  width: 30.375rem;
 }
 
 .exchanger__column {
   box-sizing: border-box;
-  padding: 14px 16px;
-  border-radius: 8px;
+  padding: 0.875rem 1rem;
+  border-radius: 0.5rem;
   width: 100%;
   text-align: center;
   background-color: var(--website-bg);
@@ -221,12 +238,12 @@ ul {
 }
 
 .exchanger__column + .exchanger__column {
-  margin: 48px 0 32px 0;
+  margin: 3rem 0 2rem 0;
 }
 
 .exchanger__input-title {
   margin: 0;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 500;
   text-align: start;
 }
@@ -234,26 +251,27 @@ ul {
 .exchanger__input-wrapper {
   display: flex;
   justify-content: space-between;
-  margin-top: 10px;
+  align-items: center;
+  margin-top: 0.625rem;
 }
 
 .exchanger__input {
   width: 100%;
-  height: 24px;
-  font-size: 20px;
+  height: 1.5rem;
+  font-size: 1.25rem;
   background-color: var(--website-bg);
   border: none;
-  line-height: 21px;
+  line-height: 1.3125rem;
   outline: 0;
   letter-spacing: 1px;
 }
 
 .exchanger__select-coin {
-  width: 116px;
+  width: 7.25rem;
   display: flex;
   background-color: var(--content-bg);
-  border-radius: 50px;
-  padding: 8px;
+  border-radius: 3.125rem;
+  padding: 0.5rem;
   align-items: center;
   cursor: pointer;
   border: 1px solid var(--color-border);
@@ -268,31 +286,35 @@ ul {
 }
 
 .exchanger__select-coin span {
-  margin: 0 8px;
+  margin: 0 0.5rem;
 }
 
 .exchanger__select-coin img {
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .exchanger__select-coin svg {
-  width: 16px;
-  height: 16px;
+  width: 1rem;
+  height: 1rem;
   transform: rotate(-90deg);
 }
 
 .exchanger__btn {
   width: 100%;
-  height: 48px;
+  height: 3rem;
   font-weight: 500;
   font-size: 1rem;
-  border-radius: 4px;
+  border-radius: 0.25rem;
   border: none;
   background-color: var(--blue);
   color: var(--color-alt-text);
   cursor: pointer;
   letter-spacing: 1px;
+}
+
+.exchanger__btn:active {
+  transform: translateY(1px);
 }
 
 .exchanger__btn:hover {
