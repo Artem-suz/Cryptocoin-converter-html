@@ -12,6 +12,9 @@
   --color-icon-gh: #24292f;
   --color-icon-in: #0a66c2;
   --color-icon-vk: #0077ff;
+  --color-bg-table: #f5f4f4;
+  --color-border-table: #e6e6e6a7;
+  --color-alt-bg-table: #d6d6d6a7;
 }
 
 body {
@@ -342,7 +345,78 @@ ul {
 
 /* /////////////////////////////// */
 
-.portfolio {
+.table {
   width: 100%;
-  height: 800px;
+  border-collapse: collapse;
+}
+
+.table thead {
+  background-color: var(--color-bg-table);
+  border-spacing: 0;
+  border: 1px solid var(--color-border);
+}
+
+.table th,
+.table td {
+  padding: 10px;
+  font-weight: 400;
+}
+
+.table thead th {
+  font-weight: 500;
+}
+
+.table thead th:nth-child(odd) {
+  background-color: var(--color-alt-bg-table);
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: var(--color-bg-table);
+}
+
+.table tbody tr:hover {
+  background-color: var(--color-border);
+  transition: 0.3s;
+}
+
+.table tbody th:not(:last-child) {
+  border-right: 2px solid var(--color-border-table);
+}
+
+.portfolio__title {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.total-cost {
+  display: flex;
+}
+
+.total-cost__column {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.total-cost__column {
+  width: 100%/3;
+}
+
+.bg-numbers {
+  background-color: var(--color-bg-table);
+  padding: 15px 10px;
+}
+
+.total-cost__item {
+  text-align: center;
+}
+
+.total-cost__value {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.total-cost__currency {
+  font-size: 12px;
+  margin-top: 10px;
 }
