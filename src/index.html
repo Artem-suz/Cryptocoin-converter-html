@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', { "title": "Cryptocoin converter" })
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a class="header__nav-link active" href="#">Конвертер валют</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">Купить криптовалюту</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">Портфель</a>
+            </li>
+          </ul>
+          <span>10000000 $</span>
+          <div class="header__menu-icon">
+            <span></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    @@include('html/main-page.html' , {}) @@include('html/footer.html' , {})
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

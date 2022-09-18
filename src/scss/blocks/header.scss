@@ -1,0 +1,46 @@
+.header {
+  background-color: $blue;
+
+  &__nav {
+    padding: 0 1.25rem;
+    display: flex;
+    justify-content: space-between;
+
+    span {
+      color: $color-alt-text;
+      align-self: center;
+    }
+  }
+
+  &__nav-list {
+    padding: 0;
+    list-style: none;
+    display: flex;
+  }
+
+  &__nav-item {
+    padding: 0.9375rem 0;
+
+    & + .header__nav-item {
+      margin-left: 1.25rem;
+    }
+
+    .active {
+      color: $color-active-link;
+    }
+  }
+
+  &__nav-link {
+    text-decoration: none;
+    color: $color-alt-text;
+
+    &:hover {
+      color: $color-active-link;
+      transition: 0.2s;
+    }
+  }
+
+  &__menu-icon {
+    display: none;
+  }
+}

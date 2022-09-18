@@ -1,0 +1,15 @@
+.main {
+  margin-top: 1.25rem;
+
+  &__wrapper {
+    background-color: $content-bg;
+    padding: 1.25rem;
+    box-shadow: 0 0.5rem 1rem -0.3125rem $color-shadow;
+  }
+
+  &__title {
+    margin: 0 0 0.9375rem 0;
+    font-size: 1.75rem;
+  }
+}
+
